@@ -1,0 +1,41 @@
+body{
+    background: lightblue;
+    margin: 0;    
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 15% 65% 20%;
+    cursor: pointer;
+}
+body > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.board{
+    background: green;
+    border-radius: 25px;
+    border: 15px solid red;
+    position: relative;
+}
+
+
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+.off-cards{
+    height:101.9375px;
+    width: 70px;
+}
+
+.side-player{
+    transform: rotate(90deg);
+}
+
+.number-of-cards{
+    position: absolute;
+    font-family: sans-serif;
+    font-size: 30px;
+}
